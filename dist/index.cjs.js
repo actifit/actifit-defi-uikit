@@ -2107,6 +2107,21 @@ var Logo$1 = function (_a) {
 };
 var templateObject_1$y;
 
+var status = {
+    LIVE: {
+        text: "LIVE",
+        color: "failure",
+    },
+    SOON: {
+        text: "SOON",
+        color: "warning",
+    },
+    NEW: {
+        text: "NEW",
+        color: "success",
+    },
+};
+
 var links = [
     {
         label: "Home",
@@ -2119,21 +2134,21 @@ var links = [
         items: [
             {
                 label: "Exchange",
-                href: "https://exchange.pancakeswap.finance",
+                href: "https://exchange.actifit.io",
             },
             {
                 label: "Liquidity",
-                href: "https://exchange.pancakeswap.finance/#/pool",
+                href: "https://exchange.actifit.io/#/pool",
             },
         ],
     },
     {
-        label: "Farms",
+        label: "Workouts",
         icon: "FarmIcon",
         href: "/farms",
     },
     {
-        label: "Pools",
+        label: "Shakes",
         icon: "PoolIcon",
         href: "/syrup",
     },
@@ -2208,15 +2223,15 @@ var links = [
             // },
             {
                 label: "Github",
-                href: "https://github.com/goosedefi/",
+                href: "https://github.com/actifit/",
             },
             {
                 label: "Docs",
-                href: "https://goosedefi.gitbook.io/goose-finance/",
+                href: "https://actifit.io/whitepaper/Actifit_White_Paper.pdf",
             },
             {
                 label: "Blog",
-                href: "https://goosefinance.medium.com/",
+                href: "https://hive.blog/@actifit",
             },
         ],
     },
@@ -2228,67 +2243,24 @@ var socials = [
         items: [
             {
                 label: "English",
-                href: "https://t.me/goosedefi",
+                href: "https://t.me/actifit",
             },
-            // {
-            //   label: "Bahasa Indonesia",
-            //   href: "https://t.me/PancakeSwapIndonesia",
-            // },
-            {
-                label: "中文",
-                href: "https://t.me/goosefinancechinese",
-            },
-            // {
-            //   label: "Tiếng Việt",
-            //   href: "https://t.me/PancakeSwapVN",
-            // },
-            {
-                label: "Italiano",
-                href: "https://t.me/goosefinanceitalian",
-            },
-            {
-                label: "русский",
-                href: "https://t.me/goosefinancerussian",
-            },
-            {
-                label: "Türkiye",
-                href: "https://t.me/GooseFinanceTurkey",
-            },
-            // {
-            //   label: "Português",
-            //   href: "https://t.me/PancakeSwapPortuguese",
-            // },
-            {
-                label: "Español",
-                href: "https://t.me/goosefinancespanish",
-            },
-            {
-                label: "日本語",
-                href: "https://t.me/goosefinancejapanese",
-            },
-            {
-                label: "Français",
-                href: "https://t.me/goosefinancefrench",
-            },
-            {
-                label: "Announcements",
-                href: "https://t.me/goosefinanceann",
-            },
-            {
-                label: "Price Bot",
-                href: "https://t.me/BinanceRocketEGG",
-            },
+            
+            //{
+            //    label: "Price Bot",
+            //    href: "https://t.me/BinanceRocketEGG",
+            //},
         ],
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/goosedefi",
+        href: "https://www.twitter.com/Actifit_fitness",
     },
     {
         label: "Reddit",
         icon: "RedditIcon",
-        href: "https://www.reddit.com/r/GooseFinanceofficial",
+        href: "https://www.reddit.com/r/Actifit",
     },
 ];
 var MENU_HEIGHT = 64;
@@ -3115,6 +3087,7 @@ exports.light = lightTheme;
 exports.lightColors = lightColors;
 exports.makeRender = makeRender;
 exports.menuConfig = links;
+exports.menuStatus = status;
 exports.toastTypes = types;
 exports.useMatchBreakpoints = useMatchBreakpoints;
 exports.useModal = useModal;
